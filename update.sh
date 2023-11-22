@@ -2,7 +2,7 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
-REPO="https://raw.githubusercontent.com/Thekilz/kilz/main/"
+REPO="https://raw.githubusercontent.com/Novandytio/kilz/main/"
 CYAN='\033[0;96m'        # Cyan
 
 BG="\E[44;1;39m"
@@ -46,7 +46,7 @@ mkdir -p /etc/vls
 mkdir -p /etc/tr
 mkdir -p /etc/ss
 echo -e " [INFO] Installing SSH UDP"
-wget https://raw.githubusercontent.com/Thekilz/kilz/main/backup/set-br.sh
+wget https://raw.githubusercontent.com/Novandytio/kilz/main/backup/set-br.sh
 bash set-br.sh
 
 rm -rf update.sh
