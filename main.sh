@@ -29,7 +29,7 @@ TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 KEY="6062118036:AAEGpuR2R2bUc0wF_K9JPBX4v7gS-tAubyg"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-REPO="https://raw.githubusercontent.com/Thekilz/kilz/main/"
+REPO="https://raw.githubusercontent.com/Novandytio/kilz/main/"
 CDNF="https://raw.githubusercontent.com/Thekilz/kilz/main"
 APT="apt-get -y install "
 domain=$(cat /root/domain)
