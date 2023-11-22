@@ -1,13 +1,15 @@
 #!/bin/sh
 REPOS="https://github.com/citralinggau/abc/raw/main/"
 ns_domain_cloudflare() {
-	DOMAIN="klmpk-vpn.my.id"
+	DOMAIN="slowdns.bond
+Active"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
-	SUB_DOMAIN=${SUB}."klmpk-vpn.my.id"
+	SUB_DOMAIN=${SUB}."slowdns.bond
+Active"
 	NS_DOMAIN=dns.${SUB_DOMAIN}
-	CF_ID=andyyuda41@gmail.com
-        CF_KEY=0d626234700bad388d6d07b49c42901445d1c
+	CF_ID=bezzoperantau9699@gmail.com
+        CF_KEY=0b20eeb1c9762917c3aee1143d5a36b1931c0
 	set -euo pipefail
 	IP=$(wget -qO- ipinfo.io/ip)
 	echo "Updating DNS NS for ${NS_DOMAIN}..."
