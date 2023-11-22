@@ -3,7 +3,8 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 ns_domain_cloudflare1() {
-DOMAIN=thekill-store.site
+DOMAIN=slowdns.bond
+Active
 Active
 Active
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
