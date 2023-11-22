@@ -3,11 +3,13 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 ns_domain_cloudflare1() {
-DOMAIN=slowdns.bond
+DOMAIN=thekill-store.site
+Active
 Active
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.thekill-store.biz.id
+SUB_DOMAIN=${sub}.thekill-store.site
+Active
 Active
 CF_ID=bezzoperantau9699@gmail.com
 CF_KEY=0b20eeb1c9762917c3aee1143d5a36b1931c0
