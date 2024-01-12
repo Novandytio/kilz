@@ -289,13 +289,11 @@ function download_config(){
     wget -q -O /etc/banner "${REPO}config/banner" >/dev/null 2>&1
     
     # > Add menu, thanks to Bhoikfost Yahya <3
-    wget ${REPO}config/menu.zip
-    unzip menu.zip
-    chmod +x menu/*
-    mv menu/* /usr/local/sbin
-    rm -rf menu
-    rm -rf menu.zip
-}
+    wget -O /tmp/menu.zip "${REPO}config/menu.zip" >/dev/null 2>&1
+    mkdir /tmp/menu
+    7z e  /tmp/menu.zip -o/tmp/menu/ >/dev/null 2>&1
+    chmod +x /tmp/menu/*
+    mv /tmp/menu/* /usr/sbin/
 
     cat >/root/.profile <<EOF
 # ~/.profile: executed by Bourne-compatible login shells.
